@@ -1,18 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessible Design Co.</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <meta name="description" content="Accessible Design Co. creates inclusive and accessible digital experiences for everyone.">
+
+    <title>Accessible Design Co. | Design for Everyone</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header>
+
         <div class="logo">
-            <a href="#">Accessible Design Co.</a>
+            <a href="#home">Accessible Design Co.</a>
         </div>
+
         <nav aria-label="Main navigation" role="navigation">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -23,6 +33,219 @@
         </nav>
 
     </header>
-</body>
 
+    <main id="main-content">
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-label">DESIGN FOR EVERYONE</p>
+
+                <h1>Accessible design removes barriers.</h1>
+
+                <p>
+                    We build custom adaptations. We support communities
+                    and help people rethink what disability means so
+                    everyone has the freedom to live, learn, and thrive.
+                </p>
+
+                <a href="#services" class="hero-button">
+                    Explore Our Services
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="images/images.jpg"
+                    alt="Illustration representing accessibility and inclusive design">
+            </div>
+
+        </section>
+
+        <section id="about" class="about">
+
+            <p class="section-label">GET TO KNOW US</p>
+
+            <h2>About Us</h2>
+
+            <p>
+                At Accessible Design Co., we believe everyone deserves
+                equal access to the digital world. Our mission is to
+                create inclusive digital experiences that remove
+                barriers and empower communities.
+            </p>
+
+        </section>
+
+        <section id="services" class="services">
+
+            <p class="section-label">WHAT WE DO</p>
+
+            <h2>Our Services</h2>
+
+            <p class="section-description">
+                We help businesses create better digital experiences
+                for everyone.
+            </p>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+
+                    <div class="service-icon" aria-hidden="true">✦</div>
+
+                    <h3>Accessible Website Design</h3>
+
+                    <p>
+                        We create websites that are easy to navigate
+                        and accessible to people with different abilities.
+                    </p>
+
+                </article>
+
+                <article class="service-card">
+
+                    <div class="service-icon" aria-hidden="true">♡</div>
+
+                    <h3>Accessibility Audits</h3>
+
+                    <p>
+                        We identify accessibility barriers and
+                        recommend improvements for your website.
+                    </p>
+
+                </article>
+
+                <article class="service-card">
+
+                    <div class="service-icon" aria-hidden="true">✿</div>
+
+                    <h3>Inclusive UI/UX Design</h3>
+
+                    <p>
+                        We design intuitive and inclusive interfaces
+                        that improve the user experience for everyone.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact">
+
+            <p class="section-label">LET'S TALK</p>
+
+            <h2>Get in Touch</h2>
+
+            <p class="section-description">
+                Have a question? We'd love to hear from you.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                        aria-describedby="name-help">
+
+                    <small id="name-help">
+                        Please enter your full name.
+                    </small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                        aria-describedby="email-help">
+
+                    <small id="email-help">
+                        Please enter a valid email address.
+                    </small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="subject">Subject</label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                        aria-describedby="message-help"></textarea>
+
+                    <small id="message-help">
+                        Please describe how we can help you.
+                    </small>
+
+                </div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <h2>Accessible Design Co.</h2>
+
+        <p>
+            Designing a digital world where everyone belongs.
+        </p>
+
+        <p>
+            Have questions? Get in touch using our
+            <a href="#contact">contact form</a>.
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://www.instagram.com/">Instagram</a>
+
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Accessible Design Co. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
 </html>
